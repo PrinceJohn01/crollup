@@ -21,7 +21,7 @@ class TransactionScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 60, right: 60),
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Colors.brown.shade100,
+                      color: const Color(0xFFf5f4e6),
                       borderRadius: BorderRadius.circular(25)),
                   height: 210,
                   child: const Column(
