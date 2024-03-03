@@ -170,7 +170,7 @@ class TransactionScreen extends StatelessWidget {
                         ),
                         child: const Center(
                           child: Icon(
-                            Icons.network_cell,
+                            Icons.signal_cellular_alt,
                             color: Color(0xFffa96e5),
                             size: 50,
                           ),
@@ -197,7 +197,7 @@ class TransactionScreen extends StatelessWidget {
                         ),
                         child: const Center(
                           child: Icon(
-                            Icons.settings,
+                            Icons.settings_outlined,
                             color: Color(0xFF7397fa),
                             size: 50,
                           ),

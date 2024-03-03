@@ -51,7 +51,7 @@ class _BottomBarNavigationState extends State<BottomBarNavigation> {
             label: 'Transaction',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person_2_outlined),
+            icon: Icon(Icons.person_pin),
             label: 'People',
           ),
         ],
@@ -72,7 +72,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Screen 1'),
+      child: Text('Home'),
     );
   }
 }
@@ -83,7 +83,7 @@ class Wallet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Screen 2'),
+      child: Text('Wallet'),
     );
   }
 }
@@ -94,7 +94,7 @@ class Explore extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Screen 3'),
+      child: Text('Explore'),
     );
   }
 }
@@ -105,7 +105,7 @@ class You extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Screen 5'),
+      child: Text('Profile'),
     );
   }
 }
