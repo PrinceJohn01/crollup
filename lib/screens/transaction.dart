@@ -24,12 +24,12 @@ class TransactionScreen extends StatelessWidget {
                       color: const Color(0xFFf5f4e6),
                       borderRadius: BorderRadius.circular(25)),
                   height: 210,
-                  child: const Column(
+                  child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(right: 20, left: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -52,7 +52,10 @@ class TransactionScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Padding(
                         padding: EdgeInsets.only(right: 20, left: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,18 +65,50 @@ class TransactionScreen extends StatelessWidget {
                               "Total amount invested",
                               style: TextStyle(
                                   color: Colors.grey,
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                   fontSize: 26),
                             ),
                             Text("Current Value",
                                 style: TextStyle(
                                     color: Colors.grey,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.normal,
                                     fontSize: 26)),
                           ],
                         ),
                       ),
+                      const SizedBox(
+                        height: 20,
+                      ),
                       Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            height: 5,
+                            decoration: const BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.centerLeft,
+                                end: Alignment.centerRight,
+                                colors: [
+                                  Colors.black, // Start with black color
+                                  Colors.black, // End with black color
+                                  Colors.grey, // Transition to grey color
+                                  Colors.grey, // Transition to grey color
+                                  Colors.grey, // Transition to grey color
+                                ],
+                                stops: [
+                                  0.0,
+                                  0.5,
+                                  0.51,
+                                  0.75,
+                                  1.0
+                                ], // Stop points for colors
+                              ),
+                            ),
+                          )),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Padding(
                         padding: EdgeInsets.only(right: 20, left: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -103,7 +138,7 @@ class TransactionScreen extends StatelessWidget {
                         width: 100,
                         height: 100,
                         decoration: const BoxDecoration(
-                          color: Color(0xFFbff2d8),
+                          color: Color(0xFFdcf2e3),
                           shape: BoxShape.circle,
                         ),
                         child: const Center(
@@ -205,66 +240,78 @@ class TransactionScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 60, right: 60),
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(25)),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                  ),
                   height: 160,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       const SizedBox(
-                        width: 10,
+                        width: 20,
                       ),
                       Container(
                         width: 50,
                         height: 50,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent.shade100,
+                        decoration: const BoxDecoration(
+                          color: Color(0xFF4e2375),
                           shape: BoxShape.circle,
                         ),
-                        child: Center(
-                          child: Icon(
-                            Icons.settings,
-                            color: Colors.blue.shade900,
-                            size: 40,
+                        child: const Center(
+                          child: Text(
+                            "D",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(right: 20, left: 20),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Text(
                                   "DefiPulse Index",
                                   style: TextStyle(
-                                      color: Colors.deepPurple.shade600,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 26),
+                                    color: Colors.deepPurple.shade600,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 26,
+                                  ),
                                 ),
                               ],
                             ),
                           ),
                           const Padding(
-                            padding: EdgeInsets.only(right: 20, top: 5),
+                            padding: EdgeInsets.only(right: 20, left: 20),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   "\$0.0026",
                                   style: TextStyle(
-                                      color: Colors.grey,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 26),
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 26,
+                                  ),
                                 ),
-                                Text("+7.84",
-                                    style: TextStyle(
-                                        color: Colors.green,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 26)),
+                                SizedBox(
+                                  width: 310,
+                                ),
+                                Text(
+                                  "+7.84",
+                                  style: TextStyle(
+                                    color: Colors.green,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 26,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -318,8 +365,8 @@ class TransactionScreen extends StatelessWidget {
                           Container(
                             width: 50,
                             height: 50,
-                            decoration: BoxDecoration(
-                              color: Colors.orangeAccent.shade100,
+                            decoration: const BoxDecoration(
+                              color: Color(0xFFfaf6dc),
                               shape: BoxShape.circle,
                             ),
                             child: Center(
@@ -408,14 +455,14 @@ class TransactionScreen extends StatelessWidget {
                           Container(
                             width: 50,
                             height: 50,
-                            decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
+                            decoration: const BoxDecoration(
+                              color: Color(0xFfdcf2e3),
                               shape: BoxShape.circle,
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Icon(
                                 Icons.transit_enterexit_rounded,
-                                color: Colors.greenAccent.shade400,
+                                color: Colors.green,
                                 size: 40,
                               ),
                             ),
@@ -497,14 +544,14 @@ class TransactionScreen extends StatelessWidget {
                           Container(
                             width: 50,
                             height: 50,
-                            decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
+                            decoration: const BoxDecoration(
+                              color: Color(0xFFdcf2e3),
                               shape: BoxShape.circle,
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Icon(
                                 Icons.transit_enterexit_rounded,
-                                color: Colors.greenAccent.shade400,
+                                color: Colors.green,
                                 size: 40,
                               ),
                             ),
