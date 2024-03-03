@@ -12,11 +12,11 @@ class _BottomBarNavigationState extends State<BottomBarNavigation> {
   int _selectedIndex = 0;
 
   final List<Widget> _widgetOptions = <Widget>[
-    const Screen1(),
-    const Screen2(),
-    const Screen3(),
+    const HomeScreen(),
+    const Wallet(),
+    const Explore(),
     const TransactionScreen(),
-    const Screen5(),
+    const You(),
   ];
 
   void _onItemTapped(int index) {
@@ -32,6 +32,7 @@ class _BottomBarNavigationState extends State<BottomBarNavigation> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -57,14 +58,16 @@ class _BottomBarNavigationState extends State<BottomBarNavigation> {
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
+        selectedLabelStyle:
+            const TextStyle(color: Colors.black), // Add this line
         onTap: _onItemTapped,
       ),
     );
   }
 }
 
-class Screen1 extends StatelessWidget {
-  const Screen1({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -74,8 +77,8 @@ class Screen1 extends StatelessWidget {
   }
 }
 
-class Screen2 extends StatelessWidget {
-  const Screen2({super.key});
+class Wallet extends StatelessWidget {
+  const Wallet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -85,8 +88,8 @@ class Screen2 extends StatelessWidget {
   }
 }
 
-class Screen3 extends StatelessWidget {
-  const Screen3({super.key});
+class Explore extends StatelessWidget {
+  const Explore({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -96,8 +99,8 @@ class Screen3 extends StatelessWidget {
   }
 }
 
-class Screen5 extends StatelessWidget {
-  const Screen5({super.key});
+class You extends StatelessWidget {
+  const You({super.key});
 
   @override
   Widget build(BuildContext context) {

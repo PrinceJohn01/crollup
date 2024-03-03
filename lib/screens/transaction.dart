@@ -7,14 +7,14 @@ class TransactionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.greenAccent.shade100,
+        backgroundColor: const Color(0xFFe9f7f7),
         title: const Center(child: Text("Buy my first car")),
         leading: IconButton(
             onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Colors.greenAccent.shade100,
+          color: const Color(0xFFe9f7f7),
           child: Column(
             children: [
               Padding(
@@ -102,8 +102,8 @@ class TransactionScreen extends StatelessWidget {
                       Container(
                         width: 100,
                         height: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.greenAccent.shade200,
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFbff2d8),
                           shape: BoxShape.circle,
                         ),
                         child: const Center(
@@ -129,14 +129,14 @@ class TransactionScreen extends StatelessWidget {
                       Container(
                         width: 100,
                         height: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.pinkAccent.shade100,
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFf7dff2),
                           shape: BoxShape.circle,
                         ),
                         child: const Center(
                           child: Icon(
                             Icons.network_cell,
-                            color: Colors.pink,
+                            color: Color(0xFffa96e5),
                             size: 50,
                           ),
                         ),
@@ -156,14 +156,14 @@ class TransactionScreen extends StatelessWidget {
                       Container(
                         width: 100,
                         height: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent.shade100,
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFd5e7f0),
                           shape: BoxShape.circle,
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.settings,
-                            color: Colors.blue.shade900,
+                            color: Color(0xFF7397fa),
                             size: 50,
                           ),
                         ),
