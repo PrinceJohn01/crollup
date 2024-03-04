@@ -397,14 +397,13 @@ class TransactionScreen extends StatelessWidget {
                   width: 45,
                   height: 45,
                   decoration: BoxDecoration(
-                    color:
-                        containerColor, // Use containerColor for background color
+                    color: containerColor, //  background color
                     shape: BoxShape.circle,
                   ),
                   child: Center(
                     child: Icon(
-                      iconData, // Use iconData for icon
-                      color: iconColor, // Use iconColor for icon color
+                      iconData, // icon
+                      color: iconColor, //  icon color
                       size: 25,
                     ),
                   ),
