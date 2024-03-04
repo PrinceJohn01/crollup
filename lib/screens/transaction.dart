@@ -7,14 +7,14 @@ class TransactionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFFE9F7F7),
+        backgroundColor: Colors.greenAccent[100],
         title: const Center(child: Text("Buy my first car")),
         leading: IconButton(
             onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: const Color(0xFFE9F7F7),
+          color: Colors.greenAccent[100],
           child: Column(
             children: [
               Padding(
