@@ -124,7 +124,7 @@ class TransactionScreen extends StatelessWidget {
                             Text(
                               "5th May, 2023",
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.black54,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 10,
                               ),
