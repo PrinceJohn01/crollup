@@ -35,7 +35,7 @@ class _BottomBarNavigationState extends State<BottomBarNavigation> {
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home_filled),
             label: 'Home',
           ),
           BottomNavigationBarItem(
