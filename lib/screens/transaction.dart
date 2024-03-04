@@ -334,7 +334,7 @@ class TransactionScreen extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 26,
-                          fontWeight: FontWeight.normal),
+                          fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "See all",
@@ -421,7 +421,7 @@ class TransactionScreen extends StatelessWidget {
                           const Text(
                             "Transaction Status",
                             style: TextStyle(
-                                color: Colors.black54,
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20),
                           ),
@@ -510,7 +510,7 @@ class TransactionScreen extends StatelessWidget {
                           Text(
                             "Transaction Status",
                             style: TextStyle(
-                                color: Colors.black54,
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20),
                           ),
@@ -599,7 +599,7 @@ class TransactionScreen extends StatelessWidget {
                           Text(
                             "Transaction Status",
                             style: TextStyle(
-                                color: Colors.black54,
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20),
                           ),
